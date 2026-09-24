@@ -14,11 +14,12 @@ button{border:0;border-radius:15px;padding:15px;font-size:16px;font-weight:750;c
 .badge{display:inline-block;background:#edf4ff;padding:8px 12px;border-radius:99px;font-weight:700}.hidden{display:none}
 @media(max-width:560px){.answers{grid-template-columns:1fr}.pic{height:240px}.card{padding:16px}}
 </style></head><body><main>
-<div class="top"><div class="brand">⚙️ SPIKE Parts Challenge</div><div class="stars" id="stars">⭐ 0</div></div>
+<div class="top"><div class="brand">⚙️ SPIKE Parts Challenge</div><div><span class="stars" id="stars">⭐ 0</span> <button onclick="showBoard()" style="padding:9px 12px">🏆 Leaderboard</button></div></div>
 <div class="card" id="game"><div class="progress"><div class="bar" id="bar"></div></div>
 <p class="muted" id="counter"></p><h2>What part is this?</h2><div class="pic"><img id="pic" alt="LEGO SPIKE part"></div>
 <div class="answers" id="answers"></div><p id="feedback" class="center"></p><button id="next" class="next hidden">Next part →</button></div>
-<div class="card center hidden" id="finish"><div style="font-size:70px">🏆</div><h1>Challenge complete!</h1><p id="score"></p><p id="message"></p><button class="next" onclick="restart()">Play again</button></div>
+<div class="card center hidden" id="finish"><div style="font-size:70px">🏆</div><h1>Challenge complete!</h1><p id="score"></p><p id="message"></p><input id="player" maxlength="20" placeholder="Enter your name" style="width:100%;padding:14px;border:2px solid #d9e4f2;border-radius:14px;font-size:18px"><button class="next" onclick="saveScore()">Add me to leaderboard</button><button onclick="restart()" style="margin-top:10px;width:100%">Play again</button></div>
+<div class="card hidden" id="board"><h1>🏆 Leaderboard</h1><div id="boardRows"></div><button class="next" onclick="closeBoard()">Back to quiz</button></div>
 </main><script>
 const Q=[
 ["wheel1.svg","56mm Wheel",["56mm Wheel","18mm Wheel","10 Tooth Large Sprocket","Medium Motor"]],
@@ -33,11 +34,14 @@ const Q=[
 ["motorM.svg","Medium Motor",["Medium Motor","Large Motor","SPIKE Prime Hub","56mm Wheel"]],
 ["motorL.svg","Large Motor",["Large Motor","Medium Motor","SPIKE Prime Hub","2L Worm Gear"]]
 ];
-let order=[],i=0,points=0,locked=false;
+let order=[],i=0,points=0,locked=false,startTime=Date.now();
 const $=id=>document.getElementById(id); function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
-function start(){order=shuffle(Q);i=0;points=0;$("stars").textContent="⭐ 0";$("game").classList.remove("hidden");$("finish").classList.add("hidden");show()}
+function start(){order=shuffle(Q);i=0;points=0;startTime=Date.now();$("stars").textContent="⭐ 0";$("game").classList.remove("hidden");$("finish").classList.add("hidden");show()}
 function show(){locked=false;const q=order[i];$("counter").textContent=`Part ${i+1} of ${order.length}`;$("bar").style.width=(i/order.length*100)+"%";$("pic").src="assets/"+q[0];$("feedback").textContent="";$("next").classList.add("hidden");$("answers").innerHTML="";shuffle(q[2]).forEach(a=>{let b=document.createElement("button");b.className="answer";b.textContent=a;b.onclick=()=>pick(b,a,q[1]);$("answers").appendChild(b)})}
 function pick(b,a,correct){if(locked)return;locked=true;[...document.querySelectorAll(".answer")].forEach(x=>{if(x.textContent===correct)x.classList.add("good")});if(a===correct){points++;$("stars").textContent="⭐ "+points;$("feedback").textContent="🎉 Correct! Great job!";}else{b.classList.add("bad");$("feedback").textContent="Good try — the green answer is the right one."}$("next").classList.remove("hidden")}
 $("next").onclick=()=>{i++;if(i<order.length)show();else done()};function done(){$("game").classList.add("hidden");$("finish").classList.remove("hidden");$("score").textContent=`You got ${points} out of ${order.length} correct!`;$("message").textContent=points===order.length?"Perfect score! 🌟":points>=8?"Fantastic work! 🚀":"Nice work — play again and beat your score!";$("bar").style.width="100%"}
-function restart(){start()} start();
+function restart(){$("board").classList.add("hidden");start()}
+function saveScore(){let name=$("player").value.trim();if(!name)return alert("Please enter your name.");let sec=Math.round((Date.now()-startTime)/1000),rows=JSON.parse(localStorage.getItem("spikeLeaderboard")||"[]");let old=rows.find(x=>x.name.toLowerCase()===name.toLowerCase());let entry={name,score:points,time:sec};if(!old||points>old.score||(points===old.score&&sec<old.time)){rows=rows.filter(x=>x.name.toLowerCase()!==name.toLowerCase());rows.push(entry)}rows.sort((a,b)=>b.score-a.score||a.time-b.time);localStorage.setItem("spikeLeaderboard",JSON.stringify(rows.slice(0,20)));showBoard()}
+function showBoard(){$("game").classList.add("hidden");$("finish").classList.add("hidden");$("board").classList.remove("hidden");let rows=JSON.parse(localStorage.getItem("spikeLeaderboard")||"[]");$("boardRows").innerHTML=rows.length?rows.map((x,j)=>`<p style="display:flex;justify-content:space-between;padding:10px;border-bottom:1px solid #eee"><b>${j+1}. ${x.name}</b><span>⭐ ${x.score} · ${x.time}s</span></p>`).join(""):"<p>No scores yet — be the first!</p>"}
+function closeBoard(){$("board").classList.add("hidden");restart()} start();
 </script></body></html>
