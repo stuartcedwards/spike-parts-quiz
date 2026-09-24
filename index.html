@@ -21,17 +21,17 @@ button{border:0;border-radius:15px;padding:15px;font-size:16px;font-weight:750;c
 <div class="card center hidden" id="finish"><div style="font-size:70px">🏆</div><h1>Challenge complete!</h1><p id="score"></p><p id="message"></p><button class="next" onclick="restart()">Play again</button></div>
 </main><script>
 const Q=[
-["wheel1.jpg","56mm Wheel",["56mm Wheel","18mm Wheel","10 Tooth Large Sprocket","Medium Motor"]],
-["tire.jpg","56mm ID Tire",["56mm ID Tire","56mm Wheel","2L Worm Gear","Large Motor"]],
-["wheel2.jpg","56mm Wheel with Tire",["56mm Wheel with Tire","18mm Wheel","56mm ID Tire","20 Tooth Double Bevel Gear"]],
-["wheel3.jpg","18mm Wheel",["18mm Wheel","56mm Wheel","8 Tooth Gear","Medium Motor"]],
-["sprocket.jpg","10 Tooth Large Sprocket",["10 Tooth Large Sprocket","12 Tooth Bevel Gear","56mm Wheel","2L Worm Gear"]],
-["gear8.jpg","8 Tooth Gear",["8 Tooth Gear","12 Tooth Bevel Gear","20 Tooth Double Bevel Gear","10 Tooth Large Sprocket"]],
-["gear12.jpg","12 Tooth Bevel Gear",["12 Tooth Bevel Gear","8 Tooth Gear","2L Worm Gear","18mm Wheel"]],
-["gear20.jpg","20 Tooth Double Bevel Gear",["20 Tooth Double Bevel Gear","12 Tooth Bevel Gear","10 Tooth Large Sprocket","56mm Wheel"]],
-["worm.jpg","2L Worm Gear",["2L Worm Gear","8 Tooth Gear","12 Tooth Bevel Gear","18mm Wheel"]],
-["motorM.jpg","Medium Motor",["Medium Motor","Large Motor","SPIKE Prime Hub","56mm Wheel"]],
-["motorL.jpg","Large Motor",["Large Motor","Medium Motor","SPIKE Prime Hub","2L Worm Gear"]]
+["wheel1.svg","56mm Wheel",["56mm Wheel","18mm Wheel","10 Tooth Large Sprocket","Medium Motor"]],
+["tire.svg","56mm ID Tire",["56mm ID Tire","56mm Wheel","2L Worm Gear","Large Motor"]],
+["wheel2.svg","56mm Wheel with Tire",["56mm Wheel with Tire","18mm Wheel","56mm ID Tire","20 Tooth Double Bevel Gear"]],
+["wheel3.svg","18mm Wheel",["18mm Wheel","56mm Wheel","8 Tooth Gear","Medium Motor"]],
+["sprocket.svg","10 Tooth Large Sprocket",["10 Tooth Large Sprocket","12 Tooth Bevel Gear","56mm Wheel","2L Worm Gear"]],
+["gear8.svg","8 Tooth Gear",["8 Tooth Gear","12 Tooth Bevel Gear","20 Tooth Double Bevel Gear","10 Tooth Large Sprocket"]],
+["gear12.svg","12 Tooth Bevel Gear",["12 Tooth Bevel Gear","8 Tooth Gear","2L Worm Gear","18mm Wheel"]],
+["gear20.svg","20 Tooth Double Bevel Gear",["20 Tooth Double Bevel Gear","12 Tooth Bevel Gear","10 Tooth Large Sprocket","56mm Wheel"]],
+["worm.svg","2L Worm Gear",["2L Worm Gear","8 Tooth Gear","12 Tooth Bevel Gear","18mm Wheel"]],
+["motorM.svg","Medium Motor",["Medium Motor","Large Motor","SPIKE Prime Hub","56mm Wheel"]],
+["motorL.svg","Large Motor",["Large Motor","Medium Motor","SPIKE Prime Hub","2L Worm Gear"]]
 ];
 let order=[],i=0,points=0,locked=false;
 const $=id=>document.getElementById(id); function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
