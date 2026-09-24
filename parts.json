@@ -1,0 +1,442 @@
+[
+  {
+    "name": "5x7 Frame, Open Center",
+    "category": "Frames",
+    "image": "assets/part-01.jpg"
+  },
+  {
+    "name": "11x19 Technic Frame (Baseplate)",
+    "category": "Frames",
+    "image": "assets/part-02.jpg"
+  },
+  {
+    "name": "3x5 Beam, H-Shape",
+    "category": "Frames",
+    "image": "assets/part-03.jpg"
+  },
+  {
+    "name": "5x11 Frame, H-Shape, Open Center",
+    "category": "Frames",
+    "image": "assets/part-04.jpg"
+  },
+  {
+    "name": "3x3 Pin Connector Block",
+    "category": "Frames",
+    "image": "assets/part-05.jpg"
+  },
+  {
+    "name": "3x11 Panel",
+    "category": "Panels",
+    "image": "assets/part-06.jpg"
+  },
+  {
+    "name": "5x11 Panel, Tapered",
+    "category": "Panels",
+    "image": "assets/part-07.jpg"
+  },
+  {
+    "name": "3x7x2 Panel, Curved",
+    "category": "Panels",
+    "image": "assets/part-08.jpg"
+  },
+  {
+    "name": "3x11x2 Panel, Curved w/ 10-Pin Holes",
+    "category": "Panels",
+    "image": "assets/part-09.jpg"
+  },
+  {
+    "name": "3x5x3 Panel, Bent",
+    "category": "Panels",
+    "image": "assets/part-10.jpg"
+  },
+  {
+    "name": "5x3 Socket w/ H-Shape",
+    "category": "Other Technic",
+    "image": "assets/part-11.jpg"
+  },
+  {
+    "name": "19mm D. Ball",
+    "category": "Other Technic",
+    "image": "assets/part-12.jpg"
+  },
+  {
+    "name": "1x3 Tooth w/ Axle Hole",
+    "category": "Other Technic",
+    "image": "assets/part-13.jpg"
+  },
+  {
+    "name": "12L Flex Axle",
+    "category": "Other Technic",
+    "image": "assets/part-14.jpg"
+  },
+  {
+    "name": "6L Ribbed Hose",
+    "category": "Other Technic",
+    "image": "assets/part-15.jpg"
+  },
+  {
+    "name": "Pin Hub, Axle",
+    "category": "Connector Hubs",
+    "image": "assets/part-16.jpg"
+  },
+  {
+    "name": "Pin Hub, 2-Axle 90 Degree",
+    "category": "Connector Hubs",
+    "image": "assets/part-17.jpg"
+  },
+  {
+    "name": "Pin Hub, 1-Pin",
+    "category": "Connector Hubs",
+    "image": "assets/part-18.jpg"
+  },
+  {
+    "name": "Pin Hub, 2-Pins",
+    "category": "Connector Hubs",
+    "image": "assets/part-19.jpg"
+  },
+  {
+    "name": "Angled Connector #4, 135 Degrees",
+    "category": "Connector Hubs",
+    "image": "assets/part-20.jpg"
+  },
+  {
+    "name": "Smooth Pin & Axle",
+    "category": "Connectors",
+    "image": "assets/part-21.jpg"
+  },
+  {
+    "name": "Friction Pin & Axle",
+    "category": "Connectors",
+    "image": "assets/part-22.jpg"
+  },
+  {
+    "name": "1L Friction Pin and 2L Axle",
+    "category": "Connectors",
+    "image": "assets/part-23.jpg"
+  },
+  {
+    "name": "2L Friction Pin and 1L Axle",
+    "category": "Connectors",
+    "image": "assets/part-24.jpg"
+  },
+  {
+    "name": "Medium Motor",
+    "category": "Hubs & Motors",
+    "image": "assets/part-25.jpg"
+  },
+  {
+    "name": "Large Motor",
+    "category": "Hubs & Motors",
+    "image": "assets/part-26.jpg"
+  },
+  {
+    "name": "1x6 Technic Brick",
+    "category": "Bricks",
+    "image": "assets/part-27.jpg"
+  },
+  {
+    "name": "2x4 Technic Brick with Vertical Axle Holes",
+    "category": "Bricks",
+    "image": "assets/part-28.jpg"
+  },
+  {
+    "name": "6x4 Technic Frame, Open Center",
+    "category": "Bricks",
+    "image": "assets/part-29.jpg"
+  },
+  {
+    "name": "3x7 Fairing",
+    "category": "Panels",
+    "image": "assets/part-30.jpg"
+  },
+  {
+    "name": "5x11 Fairing",
+    "category": "Panels",
+    "image": "assets/part-31.jpg"
+  },
+  {
+    "name": "15x2x7 Mudguard, Trapezoid",
+    "category": "Panels",
+    "image": "assets/part-32.jpg"
+  },
+  {
+    "name": "6L Technic Link",
+    "category": "Link & Chain",
+    "image": "assets/part-33.jpg"
+  },
+  {
+    "name": "5L Wide Track",
+    "category": "Link & Chain",
+    "image": "assets/part-34.jpg"
+  },
+  {
+    "name": "Rubber Tread Pin",
+    "category": "Link & Chain",
+    "image": "assets/part-35.jpg"
+  },
+  {
+    "name": "10 Tooth Large Sprocket",
+    "category": "Link & Chain",
+    "image": "assets/part-36.jpg"
+  },
+  {
+    "name": "4 Knob Wheel",
+    "category": "Link & Chain",
+    "image": "assets/part-37.jpg"
+  },
+  {
+    "name": "SPIKE Prime Hub",
+    "category": "Hubs & Motors",
+    "image": "assets/part-38.jpg"
+  },
+  {
+    "name": "56mm D. x 34mm Wheel w/ Technic Axle Hole",
+    "category": "Wheels & Tyres",
+    "image": "assets/part-39.jpg"
+  },
+  {
+    "name": "56mm ID Tire, ZR (68.8x36mm)",
+    "category": "Wheels & Tyres",
+    "image": "assets/part-40.jpg"
+  },
+  {
+    "name": "56mm D. x 14mm Wheel w/ Tire, Technic Axle Hole",
+    "category": "Wheels & Tyres",
+    "image": "assets/part-41.jpg"
+  },
+  {
+    "name": "18mm D. x 14mm Wheel w/ Technic Axle Hole",
+    "category": "Wheels & Tyres",
+    "image": "assets/part-42.jpg"
+  },
+  {
+    "name": "11x11 35-Tooth ¼ Gear Ring",
+    "category": "Gears",
+    "image": "assets/part-43.jpg"
+  },
+  {
+    "name": "1x13 Rack",
+    "category": "Gears",
+    "image": "assets/part-44.jpg"
+  },
+  {
+    "name": "1x14x2 Rack",
+    "category": "Gears",
+    "image": "assets/part-45.jpg"
+  },
+  {
+    "name": "1x14x2 Rack Housing",
+    "category": "Gears",
+    "image": "assets/part-46.jpg"
+  },
+  {
+    "name": "2x4 Plate w/ 3 Holes",
+    "category": "Plates",
+    "image": "assets/part-47.jpg"
+  },
+  {
+    "name": "1x5 Plate w/ Rounded Corners, Axle Hole",
+    "category": "Plates",
+    "image": "assets/part-48.jpg"
+  },
+  {
+    "name": "Technic 3-Blade Rotor w/ Axle Hole",
+    "category": "Plates",
+    "image": "assets/part-49.jpg"
+  },
+  {
+    "name": "1x3 Beam, Thin",
+    "category": "Thin Beams",
+    "image": "assets/part-50.jpg"
+  },
+  {
+    "name": "3x3 Liftarm, Thin w/ L-Shape",
+    "category": "Thin Beams",
+    "image": "assets/part-51.jpg"
+  },
+  {
+    "name": "3x3 Beam, Thin w/ D-Shape",
+    "category": "Thin Beams",
+    "image": "assets/part-52.jpg"
+  },
+  {
+    "name": "3x5 Triangle Beam, Thin",
+    "category": "Thin Beams",
+    "image": "assets/part-53.jpg"
+  },
+  {
+    "name": "1x3 Beam, Thin w/ 1-Pin & 1-Axle Hole",
+    "category": "Thin Beams",
+    "image": "assets/part-54.jpg"
+  },
+  {
+    "name": "½ Pin",
+    "category": "Connectors",
+    "image": "assets/part-55.jpg"
+  },
+  {
+    "name": "Pin, Smooth",
+    "category": "Connectors",
+    "image": "assets/part-56.jpg"
+  },
+  {
+    "name": "Pin, Friction",
+    "category": "Connectors",
+    "image": "assets/part-57.jpg"
+  },
+  {
+    "name": "3L Pin",
+    "category": "Connectors",
+    "image": "assets/part-58.jpg"
+  },
+  {
+    "name": "3L Pin w/ Bush",
+    "category": "Connectors",
+    "image": "assets/part-59.jpg"
+  },
+  {
+    "name": "Light Sensor",
+    "category": "Sensors",
+    "image": "assets/part-60.jpg"
+  },
+  {
+    "name": "Force Sensor",
+    "category": "Sensors",
+    "image": "assets/part-61.jpg"
+  },
+  {
+    "name": "Distance Sensor",
+    "category": "Sensors",
+    "image": "assets/part-62.jpg"
+  },
+  {
+    "name": "2L Axle & Pin Perpendicular",
+    "category": "Other Connectors",
+    "image": "assets/part-63.jpg"
+  },
+  {
+    "name": "3L Axle & 2-Pin Hole",
+    "category": "Other Connectors",
+    "image": "assets/part-64.jpg"
+  },
+  {
+    "name": "3L 2-Axle & Center Pin",
+    "category": "Other Connectors",
+    "image": "assets/part-65.jpg"
+  },
+  {
+    "name": "1-Axle & 3-Pin",
+    "category": "Other Connectors",
+    "image": "assets/part-66.jpg"
+  },
+  {
+    "name": "Axle & Axle Connector",
+    "category": "Other Connectors",
+    "image": "assets/part-67.jpg"
+  },
+  {
+    "name": "2-Axle Connector, Rubber",
+    "category": "Other Connectors",
+    "image": "assets/part-68.jpg"
+  },
+  {
+    "name": "Toggle Db w/ Axles & Pins",
+    "category": "Other Connectors",
+    "image": "assets/part-69.jpg"
+  },
+  {
+    "name": "3L H-Shaped Connector w/ 4-Pins",
+    "category": "Other Connectors",
+    "image": "assets/part-70.jpg"
+  },
+  {
+    "name": "3x3 L-Shaped Connector w/ 4-Pins",
+    "category": "Other Connectors",
+    "image": "assets/part-71.jpg"
+  },
+  {
+    "name": "½ Bush",
+    "category": "Other Connectors",
+    "image": "assets/part-72.jpg"
+  },
+  {
+    "name": "Bush",
+    "category": "Other Connectors",
+    "image": "assets/part-73.jpg"
+  },
+  {
+    "name": "2L Axle Connector",
+    "category": "Other Connectors",
+    "image": "assets/part-74.jpg"
+  },
+  {
+    "name": "2L Pin Connector",
+    "category": "Other Connectors",
+    "image": "assets/part-75.jpg"
+  },
+  {
+    "name": "1x1 90 degree Elbow, Axle Holes",
+    "category": "Other Connectors",
+    "image": "assets/part-76.jpg"
+  },
+  {
+    "name": "1x1 Beam (Spacer)",
+    "category": "Beams",
+    "image": "assets/part-77.jpg"
+  },
+  {
+    "name": "1x2 Beam w/ 1-Axle Hole",
+    "category": "Beams",
+    "image": "assets/part-78.jpg"
+  },
+  {
+    "name": "1x7 Beam",
+    "category": "Beams",
+    "image": "assets/part-79.jpg"
+  },
+  {
+    "name": "1x9 Beam, Bent (6-4)",
+    "category": "Beams",
+    "image": "assets/part-80.jpg"
+  },
+  {
+    "name": "8 Tooth Gear",
+    "category": "Gears",
+    "image": "assets/part-81.jpg"
+  },
+  {
+    "name": "12 Tooth Bevel Gear",
+    "category": "Gears",
+    "image": "assets/part-82.jpg"
+  },
+  {
+    "name": "20 Tooth Double Bevel Gear",
+    "category": "Gears",
+    "image": "assets/part-83.jpg"
+  },
+  {
+    "name": "2L Worm Gear",
+    "category": "Gears",
+    "image": "assets/part-84.jpg"
+  },
+  {
+    "name": "2L Axle, Notched",
+    "category": "Axles",
+    "image": "assets/part-85.jpg"
+  },
+  {
+    "name": "5L Axle",
+    "category": "Axles",
+    "image": "assets/part-86.jpg"
+  },
+  {
+    "name": "5L Axle w/ Stop",
+    "category": "Axles",
+    "image": "assets/part-87.jpg"
+  },
+  {
+    "name": "4L Axle w/ Center Stop",
+    "category": "Axles",
+    "image": "assets/part-88.jpg"
+  }
+]
